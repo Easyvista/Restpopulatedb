@@ -1,0 +1,38 @@
+[
+  {
+    "url": "/{account}/configuration-items/{id}/item-links",
+    "methods": [
+      {
+        "name": "GET",
+        "handler": "Evsm\\App\\Api\\processHandler\\external\\get\\RestGetItemLinksProcessHandler"
+      }
+    ]
+  },
+  {
+    "url": "/{account}/configuration-items/{id}/item-links/impacted",
+    "methods": [
+      {
+        "name": "GET",
+        "handler": "Evsm\\App\\Api\\processHandler\\external\\get\\RestGetItemLinksImpactedProcessHandler"
+      }
+    ]
+  },
+  {
+    "url": "/{account}/configuration-items/{id}/item-links/impacting",
+    "methods": [
+      {
+        "name": "GET",
+        "handler": "Evsm\\App\\Api\\processHandler\\external\\get\\RestGetItemLinksImpactingProcessHandler"
+      }
+    ]
+  },
+  {
+  "url": "/{account}/configuration-items/{parent_ID}/item-links/{child_ID}",
+  "methods": [
+    {
+      "name": "GET",
+      "handler": "Evsm\\App\\Api\\processHandler\\external\\get\\RestGetParentChildItemLinksProcessHandler"
+    }
+  ]
+}
+]

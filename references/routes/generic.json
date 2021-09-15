@@ -1,0 +1,87 @@
+[
+  {
+    "url": "/{account}/{resource}",
+    "methods": [
+      {
+        "name": "GET",
+        "handler": "Evsm\\App\\Api\\processHandler\\external\\get\\RestGetListProcessHandler"
+      },
+      {
+        "name": "POST",
+        "handler": "Evsm\\App\\Api\\processHandler\\external\\post\\RestPostResourceProcessHandler"
+      },
+      {
+        "name": "PATCH",
+        "handler": "Evsm\\App\\Api\\processHandler\\external\\update\\RestUpdateResourceProcessHandler"
+      },
+      {
+        "name": "PUT",
+        "handler": "Evsm\\App\\Api\\processHandler\\external\\update\\RestUpdateResourceProcessHandler"
+      }
+    ]
+  },
+  {
+    "url": "/{account}/{resource}/{id}",
+    "methods": [
+      {
+        "name": "GET",
+        "handler": "Evsm\\App\\Api\\processHandler\\external\\get\\RestGetSingleProcessHandler"
+      },
+      {
+        "name": "PATCH",
+        "handler": "Evsm\\App\\Api\\processHandler\\external\\update\\RestUpdateResourceProcessHandler"
+      },
+      {
+        "name": "PUT",
+        "handler": "Evsm\\App\\Api\\processHandler\\external\\update\\RestUpdateResourceProcessHandler"
+      },
+      {
+        "name": "DELETE",
+        "handler": "Evsm\\App\\Api\\processHandler\\external\\delete\\RestDeleteOneProcessHandler"
+      }
+    ]
+  },
+  {
+    "url": "/{account}/{resource}/{id}/{field}",
+    "methods": [
+      {
+        "name": "GET",
+        "handler": "Evsm\\App\\Api\\processHandler\\external\\get\\RestGetMemoFieldProcessHandler"
+      }
+    ]
+  },
+  {
+    "url": "/{account}/{resource}/{id:[0-9]+}/{id2:[0-9]+}/{field}",
+    "methods": [
+      {
+        "name": "GET",
+        "handler": "Evsm\\App\\Api\\processHandler\\external\\get\\RestGetMemoFieldProcessHandler"
+      }
+    ]
+  },
+  {
+    "url": "/{account}/{resource}/{parent_ID}/{resource_bis}/{child_ID}",
+    "methods": [
+      {
+        "name": "GET",
+        "handler": "Evsm\\App\\Api\\processHandler\\external\\get\\RestGetParentChildProcessHandler"
+      },
+      {
+        "name": "POST",
+        "handler": "Evsm\\App\\Api\\processHandler\\external\\post\\RestPostParentChildRelationProcessHandler"
+      },
+      {
+        "name": "PATCH",
+        "handler": "Evsm\\App\\Api\\processHandler\\external\\update\\RestUpdateParentChildProcessHandler"
+      },
+      {
+        "name": "PUT",
+        "handler": "Evsm\\App\\Api\\processHandler\\external\\update\\RestUpdateParentChildProcessHandler"
+      },
+      {
+        "name": "DELETE",
+        "handler": "Evsm\\App\\Api\\processHandler\\external\\delete\\RestDeleteParentChildProcessHandler"
+      }
+    ]
+  }
+]

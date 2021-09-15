@@ -1,0 +1,23 @@
+[
+  {
+    "url": "/{account}/questions-result/{parent_ID:[0-9]+}/{child_ID:[0-9]+}",
+    "methods": [
+      {
+        "name": "GET",
+        "handler": "Evsm\\App\\Api\\processHandler\\external\\get\\RestGetQuestionResultProcessHandler"
+      },
+      {
+        "name": "POST",
+        "handler": "Evsm\\App\\Api\\processHandler\\external\\post\\RestPostQuestionsResultProcessHandler"
+      },
+      {
+        "name": "PATCH",
+        "handler": "Evsm\\App\\Api\\processHandler\\external\\update\\RestUpdateQuestionResultProcessHandler"
+      },
+      {
+        "name": "PUT",
+        "handler": "Evsm\\App\\Api\\processHandler\\external\\update\\RestUpdateQuestionResultProcessHandler"
+      }
+    ]
+  }
+]

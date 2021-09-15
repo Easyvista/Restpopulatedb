@@ -1,0 +1,20 @@
+[
+  {
+    "url": "/{account}/asset-characteristics/{parent_ID:[0-9]+}/{child_ID:[0-9]+}",
+    "methods": [
+      {
+        "name": "GET",
+        "handler": "Evsm\\App\\Api\\processHandler\\external\\get\\RestGetParentChildAssetCharacteristicsProcessHandler"
+      }
+    ]
+  },
+  {
+    "url": "/{account}/asset-characteristics/{id}",
+    "methods": [
+      {
+        "name": "GET",
+        "handler": "Evsm\\App\\Api\\processHandler\\external\\get\\RestGetAssetCharacteristicProcessHandler"
+      }
+    ]
+  }
+]

@@ -1,0 +1,11 @@
+[
+  {
+    "url": "/{account}/problems/{id}/requests",
+    "methods": [
+      {
+        "name": "GET",
+        "handler": "Evsm\\App\\Api\\processHandler\\external\\get\\RestGetRequestsLinkToProblem"
+      }
+    ]
+  }
+]

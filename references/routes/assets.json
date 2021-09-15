@@ -1,0 +1,63 @@
+[
+  {
+    "url": "/{account}/assets",
+    "methods": [
+      {
+        "name": "POST",
+        "handler": "Evsm\\App\\Api\\processHandler\\external\\post\\RestPostAssetProcessHandler"
+      }
+    ]
+  },
+  {
+    "url": "/{account}/assets/{id}",
+    "methods": [
+      {
+        "name": "PATCH",
+        "handler": "Evsm\\App\\Api\\processHandler\\external\\update\\RestUpdateAssetProcessHandler"
+      },
+      {
+        "name": "PUT",
+        "handler": "Evsm\\App\\Api\\processHandler\\external\\update\\RestUpdateAssetProcessHandler"
+      }
+    ]
+  },
+  {
+    "url": "/{account}/{resource}/{id}/asset-links",
+    "methods": [
+      {
+        "name": "GET",
+        "handler": "Evsm\\App\\Api\\processHandler\\external\\get\\RestGetAssetLinksProcessHandler"
+      }
+    ]
+  },
+  {
+    "url": "/{account}/assets/{parent_ID}/asset-links/{child_ID}",
+    "methods": [
+      {
+        "name": "GET",
+        "handler": "Evsm\\App\\Api\\processHandler\\external\\get\\RestGetParentChildAssetLinksProcessHandler"
+      }
+    ]
+  },
+  {
+    "url": "/{account}/assets/{parent_ID}/characteristics/{child_ID}",
+    "methods": [
+      {
+        "name": "POST",
+        "handler": "Evsm\\App\\Api\\processHandler\\external\\post\\RestPostAssetCharacteristicProcessHandler"
+      },
+      {
+        "name": "PUT",
+        "handler": "Evsm\\App\\Api\\processHandler\\external\\update\\RestUpdateAssetCharacteristicProcessHandler"
+      },
+      {
+        "name": "PATCH",
+        "handler": "Evsm\\App\\Api\\processHandler\\external\\update\\RestUpdateAssetCharacteristicProcessHandler"
+      },
+      {
+        "name": "DELETE",
+        "handler": "Evsm\\App\\Api\\processHandler\\external\\delete\\RestDeleteAssetCharacteristicProcessHandler"
+      }
+    ]
+  }
+]

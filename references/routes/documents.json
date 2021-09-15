@@ -1,0 +1,15 @@
+[
+  {
+    "url": "/{account}/documents/{id}",
+    "methods":[
+    {
+      "name": "GET",
+      "handler": "Evsm\\App\\Api\\processHandler\\external\\get\\RestGetDocumentDirectDownloadProcessHandler"
+    },
+    {
+      "name": "DELETE",
+      "handler": "Evsm\\App\\Api\\processHandler\\external\\delete\\RestDeleteDocumentFromRequestProcessHandler"
+    }
+  ]
+  }
+]

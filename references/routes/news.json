@@ -1,0 +1,41 @@
+[
+  {
+    "url": "/{account}/{resource}",
+    "methods": [
+      {
+        "name": "GET",
+        "handler": "Evsm\\App\\Api\\processHandler\\external\\get\\RestGetListProcessHandler"
+      },
+      {
+        "name": "POST",
+        "handler": "Evsm\\App\\Api\\processHandler\\external\\post\\RestPostResourceProcessHandler"
+      }
+    ]
+  },
+  {
+    "url": "/{account}/{resource}/{id}",
+    "methods": [
+      {
+        "name": "GET",
+        "handler": "Evsm\\App\\Api\\processHandler\\external\\get\\RestGetSingleProcessHandler"
+      },
+      {
+        "name": "PATCH",
+        "handler": "Evsm\\App\\Api\\processHandler\\external\\update\\RestUpdateResourceProcessHandler"
+      },
+      {
+        "name": "PUT",
+        "handler": "Evsm\\App\\Api\\processHandler\\external\\update\\RestUpdateResourceProcessHandler"
+      }
+    ]
+  },
+  {
+    "url": "/{account}/{resource}/{id}/{field}",
+    "methods": [
+      {
+        "name": "GET",
+        "handler": "Evsm\\App\\Api\\processHandler\\external\\get\\RestGetMemoFieldProcessHandler"
+      }
+    ]
+  }
+]

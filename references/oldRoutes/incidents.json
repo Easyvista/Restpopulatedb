@@ -1,0 +1,123 @@
+[
+  {
+    "url": "/{account}/{resource}",
+    "methods": [
+      {
+        "name": "GET",
+        "handler": "Evsm\\App\\Api\\processHandler\\external\\get\\RestGetListProcessHandler"
+      },
+      {
+        "name": "POST",
+        "handler": "Evsm\\App\\Api\\processHandler\\external\\post\\RestPostRequestsProcessHandler"
+      }
+    ]
+  },
+  {
+    "url": "/{account}/{resource}/{id}",
+    "methods": [
+      {
+        "name": "GET",
+        "handler": "Evsm\\App\\Api\\processHandler\\external\\get\\RestGetSingleProcessHandler"
+      },
+      {
+        "name": "PATCH",
+        "handler": "Evsm\\App\\Api\\processHandler\\external\\update\\RestUpdateRequestProcessHandler"
+      },
+      {
+        "name": "PUT",
+        "handler": "Evsm\\App\\Api\\processHandler\\external\\update\\RestUpdateRequestProcessHandler"
+      }
+    ]
+  },
+  {
+    "url": "/{account}/incidents/{id}/documents",
+    "methods": [
+      {
+        "name": "POST",
+        "handler": "Evsm\\App\\Api\\processHandler\\external\\post\\RestPostDocumentToRequestProcessHandler"
+      },
+      {
+        "name": "GET",
+        "handler": "Evsm\\App\\Api\\processHandler\\external\\get\\RestGetDocumentUrlFromRequestProcessHandler"
+      }
+    ]
+  },
+  {
+    "url": "/{account}/incidents/{id}/actions",
+    "methods": [
+      {
+        "name": "GET",
+        "handler": "Evsm\\App\\Api\\processHandler\\external\\get\\RestGetActionsFromRequestProcessHandler"
+      },
+      {
+        "name": "POST",
+        "handler": "Evsm\\App\\Api\\processHandler\\external\\post\\RestPostActionToRequestProcessHandler"
+      }
+    ]
+  },
+  {
+    "url": "/{account}/incidents/{id}/tasks",
+    "methods": [
+      {
+        "name": "POST",
+        "handler": "Evsm\\App\\Api\\processHandler\\external\\post\\RestPostTaskToRequestProcessHandler"
+      }
+    ]
+  },{
+  "url": "/{account}/incidents/{id}/countDocuments",
+  "methods": [
+    {
+      "name": "GET",
+      "handler": "Evsm\\App\\Api\\processHandler\\external\\get\\RestGetCountDocumentsProcessHandler"
+    }
+  ]
+},
+  {
+    "url": "/{account}/incidents/{id}/close",
+    "methods": [
+      {
+        "name": "PUT",
+        "handler": "Evsm\\App\\Api\\processHandler\\external\\update\\RestCloseRequestProcessHandler"
+      },
+      {
+        "name": "PATCH",
+        "handler": "Evsm\\App\\Api\\processHandler\\external\\update\\RestCloseRequestProcessHandler"
+      }
+    ]
+  },
+  {
+    "url": "/{account}/incidents/{id}/suspend",
+    "methods": [
+      {
+        "name": "PUT",
+        "handler": "Evsm\\App\\Api\\processHandler\\external\\update\\RestSuspendRequestProcessHandler"
+      },
+      {
+        "name": "PATCH",
+        "handler": "Evsm\\App\\Api\\processHandler\\external\\update\\RestSuspendRequestProcessHandler"
+      }
+    ]
+  },
+  {
+    "url": "/{account}/incidents/{id}/restart",
+    "methods": [
+      {
+        "name": "PUT",
+        "handler": "Evsm\\App\\Api\\processHandler\\external\\update\\RestRestartRequestProcessHandler"
+      },
+      {
+        "name": "PATCH",
+        "handler": "Evsm\\App\\Api\\processHandler\\external\\update\\RestRestartRequestProcessHandler"
+      }
+    ]
+  },
+  {
+    "url": "/{account}/incidents/{id}/problem",
+    "methods": [
+      {
+        "name": "GET",
+        "handler": "Evsm\\App\\Api\\processHandler\\external\\get\\RestGetProblemsLinkToRequest"
+      }
+    ]
+  }
+]

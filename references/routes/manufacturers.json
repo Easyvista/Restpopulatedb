@@ -1,0 +1,20 @@
+[
+  {
+    "url": "/{account}/{resource}",
+    "methods": [
+      {
+        "name": "GET",
+        "handler": "Evsm\\App\\Api\\processHandler\\external\\get\\RestGetListProcessHandler"
+      }
+    ]
+  },
+  {
+    "url": "/{account}/{resource}/{id}",
+    "methods": [
+      {
+        "name": "GET",
+        "handler": "Evsm\\App\\Api\\processHandler\\external\\get\\RestGetSingleProcessHandler"
+      }
+    ]
+  }
+]

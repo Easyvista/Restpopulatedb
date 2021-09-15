@@ -1,0 +1,56 @@
+/node_modules/
+
+/.project
+/.settings
+/convert.php
+/traduction.php
+/ws.html
+/optimization
+/phpinfo.php
+
+# folders
+
+# - IDE config
+.idea
+.vscode
+
+api/**/tests
+api/**/models/RedisMonitoring.php
+api/**/log
+api/v*/integrity.json
+
+apps_trustedprovider/apps_trustedprovider_evsm.php
+apps_trustedprovider/apps_trustedprovider_sso.php
+apps_trustedprovider/api/trustedprovider.ini
+
+# Customized config files
+Config/Config.php
+
+dist
+
+EditLic
+
+flex/*.old
+flex/*.swf
+flex/assets
+flex/fusioncharts
+flex/fusionwidgets
+flex/images
+
+include/javascript/.project
+
+node_modules
+
+resources/23365/Documents
+resources/23365/Integration
+
+server/dependencies
+!server/dependencies/readme.md
+
+Widgets/**/*.gitignore
+
+# Global files (checked into all folders)
+*.map
+Thumbs.db
+
+auth\.json

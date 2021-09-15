@@ -1,0 +1,15 @@
+[
+  {
+    "url": "/{account}/incidents/{id}",
+    "methods": [
+      {
+        "name": "PATCH",
+        "handler": "Evsm\\App\\Api\\processHandler\\external\\update\\RestUpdateRequestProcessHandler"
+      },
+      {
+        "name": "PUT",
+        "handler": "Evsm\\App\\Api\\processHandler\\external\\update\\RestUpdateRequestProcessHandler"
+      }
+    ]
+  }
+]

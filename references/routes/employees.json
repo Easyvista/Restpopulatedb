@@ -1,0 +1,24 @@
+[
+  {
+    "url": "/{account}/employees",
+    "methods": [
+      {
+        "name": "POST",
+        "handler": "Evsm\\App\\Api\\processHandler\\external\\post\\RestPostEmployeeProcessHandler"
+      }
+    ]
+  },
+  {
+    "url": "/{account}/employees/{id}",
+    "methods": [
+      {
+        "name": "PATCH",
+        "handler": "Evsm\\App\\Api\\processHandler\\external\\update\\RestUpdateEmployeeProcessHandler"
+      },
+      {
+        "name": "PUT",
+        "handler": "Evsm\\App\\Api\\processHandler\\external\\update\\RestUpdateEmployeeProcessHandler"
+      }
+    ]
+  }
+]
