@@ -22,19 +22,6 @@
     ]
   },
   {
-    "url": "/{account}/requests/{id}/requalification",
-    "methods": [
-      {
-        "name": "PUT",
-        "handler": "Evsm\\App\\Api\\processHandler\\external\\post\\RestPostRequestRequalificationProcessHandler"
-      },
-      {
-        "name": "PATCH",
-        "handler": "Evsm\\App\\Api\\processHandler\\external\\post\\RestPostRequestRequalificationProcessHandler"
-      }
-    ]
-  },
-  {
   "url": "/{account}/requests/{id}/documents",
   "methods": [
     {

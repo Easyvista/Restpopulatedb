@@ -16,9 +16,9 @@ interface IHandlerResourceTabElement {
 
 const RouteDirectory = './references/routes/';
 //DEV BASE
-//const DB_TABLE = '[dungeon_EVO_CONFIG40000].[EVO_CONFIG40000].';
+const DB_TABLE = '[dungeon_EVO_CONFIG40000].[EVO_CONFIG40000].';
 //PROD
-const DB_TABLE = '';
+//const DB_TABLE = '';
 const routes = fs.readdirSync(RouteDirectory);
 
 let routesTab: any[] = [];
